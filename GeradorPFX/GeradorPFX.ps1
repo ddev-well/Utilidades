@@ -1,5 +1,9 @@
-# Script criado por: Wellington Nascimento
-# Codificação UTF-8 para garantir compatibilidade de caracteres especiais
+# Explicação do script:
+# Este script facilita a criação de um arquivo PFX a partir de certificados existentes (arquivos .key e .crt).
+# Ele é útil para desenvolvedores e administradores que precisam converter certificados para uso em servidores
+# ou outros serviços que exigem o formato PFX, que inclui a chave privada e o certificado em um único arquivo.
+# Além disso, o script verifica se o OpenSSL está disponível localmente e, caso não esteja, baixa e instala
+# automaticamente para garantir que o processo possa ser concluído.
 
 function Start-OpenSslProcess {
     param (
